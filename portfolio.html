@@ -11,7 +11,7 @@
 
     <!-- - BARRE DE NAVIGUATION / HEADER -  -->
 
-    <section_home>
+    <section_home id="section_home">
     <header>
         <div class="naviguation">
             <nav>
@@ -31,12 +31,13 @@
                 <button href="section_contact">Contactez-moi</button>
             </div>    
         </div>
+    </section_home> 
     </header>
     <main>
 
         <!-- - SECTION MOI -  --> 
 
-        <section_me>
+        <section_me id="section_me">
             <h2>En savoir plus</h2>
             <h3>Je suis Tom, développeur Web</h3>
             <p>Je conçois des sites sur mesure ou adapte des solutions techniques existantes en fonction du projet et de la demande du client.</p>
@@ -47,10 +48,73 @@
             <p>De : Bourg en Bresse</p>
         </div>
             <button>Télécharger mon CV</button>
+        </section> <hr>
 
-        </section>
+        <!-- - SECTION CE QUE JE FAIS - -->
+
+        <section_do id="section_do">
+            <h2>Ce que je fais ?</h2>
+        <div class="do">
+            <img src="image/colour.png" alt="icon palette couleurs">
+            <h3>Conception graphique</h3>
+            <img src="image/monitor.png" alt="icon pc">
+            <h3>Création de site web</h3>
+            <img src="image/smartphone.png" alt="icon smartphone">
+            <h3>Conception et développement d'applications</h3>
+        </div>
+            <h2>Mes compétences</h2>
+        <div class="competences">
+            <label for="progress">Web Desing</label>
+            <progress id="file" value="65" max="100"></progress><br>
+            <label for="progress">HTML / CSS</label>
+            <progress id="file" value="90" max="100"></progress><br>
+            <label for="progress">JavaScript</label>
+            <progress id="file" value="80" max="100"></progress><br>
+            <label for="progress">PHP</label>
+            <progress id="file" value="70" max="100"></progress><br>
+        </div>
+        </section> <hr>
+
+        <!-- SECTION PORTFOLIO  -->
+
+        <section_portfolio id="section_portfolio">
+            <h2>Portfolio</h2>
+        </section> <hr>
+
+        <!-- SECTION CONTACT  -->
+
+        <footer>
+            <h2>Contact</h2>
+        <section_contact id="section_contact">
+        <div class="contact">
+            <h3>Laissez-nous un message</h3>
+            <form action="contact" method="post">
+        <div>
+                <label for="name"></label>
+                <input type="text" name="name" id="user_name" placeholder="Nom">
+        </div>
+        <div>
+                <label for="mail"></label>
+                <input type="email" id="mail" name="user_mail" placeholder="E-mail">
+        </div>
+        <div>
+                <label for="msg"></label>
+                <textarea name="user_message" id="msg" cols="25" rows="5" placeholder="Laissez-nous un message"></textarea>
+        </div>
+        <div>
+                <button type="submit">Envoyer</button>
+        </div>
+        </div>
+            </form>
+        <div class="information">
+            <h3>Adresse</h3>
+            <p>18 Rue Jayr</p>
+            <p>01250 Ceyzériat</p>
+            <p>07 86 21 83 36</p>
+            <p>tom.tournier@hotmail.com</p>
+        </div>
+     </section>
+     </footer>
     </main>
-    </section_home>
-
 </body>
 </html>
