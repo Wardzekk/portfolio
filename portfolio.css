@@ -5,7 +5,7 @@
 
 /* - BARRE DE NAVIGUATION -  */
 
-nav {
+.naviguation {
     width: 150px;
     height: 100vh;
     background-color:#111418;
@@ -37,29 +37,95 @@ li a:hover {
     color: #1cc997;
 }
 
-header {
+.home {
     background: url(image/office-g666f57a88_1920.jpg) no-repeat;
-    color: white;
-    text-align: center;
+    width: calc(100% - 150px);
+    left: 150px;
     height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#autotext {
+    border-right: 0.08em solid rgb(0, 0, 0);
+    letter-spacing: 0.05em;
+    animation: blink 0.75s step-end infinite;
+    width: fit-content;
+}
+
+@keyframes blink {
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: rgb(0, 0, 0);
+    }
 }
 
 .texte {
-    width: calc(100% - 150px);
-    position: absolute;
-    right: 0px;
-    top: 50%;
-    line-height: 300%;
+    text-align: center;
+    color: white;
+    line-height: 80px;
+    
 }
 
-section_me {
+.btn {
+    color: #20c997;
+    border-color: #20c997;
+    padding: 0.8rem 2.6rem;
+    text-decoration: none;
+    border-radius: solid 50rem;
+    background-color: transparent;
+    border: 1px solid;
+    
+}
+
+.me {
     background-color: #212529;
     width: calc(100% - 150px);
-    position: absolute;
+    right: 0px;
+    text-align: center;
+    color: white;
+    left: 150px;
+    position: relative;
+    line-height: 70px;
+    padding: 40px 0;
+}
+
+.do {
+    background-color: #343a40;
+    width: calc(100% - 150px);
     right: 0px;
     text-align: center;
     color: white;
     line-height: 300%;
+    left: 150px;
+    position: relative;
+    padding: 40px 0;
+}
+
+.portfolio {
+    background-color: #212529;
+    width: calc(100% - 150px);
+    right: 0px;
+    text-align: center;
+    color: white;
+    left: 150px;
+    position: relative;
+}
+
+.contactez {
+    background-color: #343a40;
+    width: calc(100% - 150px);
+    right: 0px;
+    text-align: center;
+    color: white;
+    line-height: 300%;
+    left: 150px;
+    position: relative;
 }
 
 .info {
@@ -78,10 +144,7 @@ button{
 
 h2 {
     text-decoration: underline #1cc997;
-}
-
-.competences {
-    text-align: left;
+    text-align: center;
 }
 
 .contact {
@@ -92,16 +155,95 @@ h2 {
     float: left;
 }
 
-.input {
-    background-color: #212529;
+.competences {
+    text-align: left;
 }
+
+input, textarea {
+    background-color: #111418;
+    width: 100%;
+}
+
+.SkillBar {
+    width: 90%;
+    height: 20px;
+    position: relative;
+    background: rgba(17, 17, 17, .3);
+    margin: 20px auto 0 auto;
+}
+
+#Skill-HTML {
+    width: 90%;
+    animation: Animate-HTML 4s;
+    height: 20px;
+    position: absolute;
+    background-color: #1cc997;
+}
+
+.Skill-Area {
+    position:absolute;
+    padding-top:3px;
+    line-height: 1.02;
+}
+@keyframes Animate-HTML {
+    from {
+    width: 10px;
+}
+to {
+    width: 90%}
+}    
+
+#Skill-JS {
+    animation: Animate-JS 4s;
+    width: 65%;
+    height: 20px;
+    position: absolute;
+    background-color: #1cc997;
+}
+@keyframes Animate-JS {
+    from {
+    width: 10px;
+}
+to {
+    width: 65%}
+}
+
+#Skill-PHP {
+    animation: Animate-PHP 4s;
+    width: 50%;
+    height: 20px;
+    position: absolute;
+    background-color: #1cc997;
+}
+@keyframes Animate-PHP {
+    from {
+    width: 10px;
+}
+to {
+    width: 50%}
+}
+
+#Skill-SQL {
+    animation: Animate-SQL 4s;
+    width: 80%;
+    height: 20px;
+    position: absolute;
+    background-color: #1cc997;
+}
+@keyframes Animate-SQL {
+    from {
+    width: 10px;
+}
+to {
+    width: 80%}
+}    
+
 
 @media screen and (max-width : 780px) {
     nav {
         width: 100%; 
         height: 100px;
     }   
+}
 
-    ul {
-    }
-   }
+

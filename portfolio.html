@@ -11,39 +11,40 @@
 
     <!-- - BARRE DE NAVIGUATION / HEADER -  -->
 
-    <section_home id="section_home">
-    <header>
-        <div class="naviguation">
+    <header class="naviguation">
             <nav>
-                <img src="" alt="">
+                <img src="" alt="photo de profil">
                 <p>Tom Tournier</p>
             <ul>
-                <li><a href="#section_home">Accueil</a></li>
-                <li><a href="#section_me">Sur moi</a></li>
-                <li><a href="#section_do>">Ce que je fais</a></li>
-                <li><a href="#section_portfolio">Porfolio</a></li>
-                <li><a href="#section_contact">Contactez-moi</a></li>
+                <li><a href="#home">ACCUEIL</a></li>
+                <li><a href="#me">SUR MOI</a></li>
+                <li><a href="#do">CE QUE JE FAIS</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="#contact">CONTACT</a></li>
             </ul>
             </nav>
-            <div class="texte">
-                <h2>Welcome</h2>
-                <h1>Développeur Web</h1>
-                <button href="section_contact">Contactez-moi</button>
-            </div>    
-        </div>
-    </section_home> 
     </header>
     <main>
 
-        <!-- - SECTION MOI -  --> 
+        <!-- - SECTION EN TETE -  --> 
+        <div class="home" id="home">
+        <div class="texte">
+            <h2>WELCOME</h2>
+            <h1 id="autotext">DÉVELOPPEUR WEB</h1>
+            <a href="#contact" class="btn">CONTACTEZ-MOI</a>
+        </div>
+        </div>    
 
-        <section_me id="section_me">
-            <h2>En savoir plus</h2>
+            <!-- - SECTION MOI -  --> 
+
+        <section class="me" id="me">
+
+            <h2>EN SAVOIR PLUS</h2>
             <h3>Je suis Tom, développeur Web</h3>
             <p>Je conçois des sites sur mesure ou adapte des solutions techniques existantes en fonction du projet et de la demande du client.</p>
         <div class="info">
             <p>Nom : Tom Tournier</p>
-            <p>Courriel : <a href="mailto:tom.tournier@hotmail.com>">tom.tournier@hotmail.com</a></p>
+            <p>Courriel : tom.tournier@hotmail.com</p>
             <p>Âge : 23 ans</p>
             <p>De : Bourg en Bresse</p>
         </div>
@@ -52,9 +53,9 @@
 
         <!-- - SECTION CE QUE JE FAIS - -->
 
-        <section_do id="section_do">
-            <h2>Ce que je fais ?</h2>
-        <div class="do">
+        <section class="do" id="do">
+            <h2>CE QUE JE FAIS ?</h2>
+        <div class="faire">
             <img src="image/colour.png" alt="icon palette couleurs">
             <h3>Conception graphique</h3>
             <img src="image/monitor.png" alt="icon pc">
@@ -62,32 +63,49 @@
             <img src="image/smartphone.png" alt="icon smartphone">
             <h3>Conception et développement d'applications</h3>
         </div>
-            <h2>Mes compétences</h2>
+            <h2>MES COMPÉTENCES</h2>
         <div class="competences">
-            <label for="progress">Web Desing</label>
-            <progress id="file" value="65" max="100"></progress><br>
-            <label for="progress">HTML / CSS</label>
-            <progress id="file" value="90" max="100"></progress><br>
-            <label for="progress">JavaScript</label>
-            <progress id="file" value="80" max="100"></progress><br>
-            <label for="progress">PHP</label>
-            <progress id="file" value="70" max="100"></progress><br>
+            <div class="SkillBar">
+                <div id="Skill-HTML"> 
+                   <span class="Skill-Area ">HTML/CSS 90%</span> 
+                </div>
+              </div>
+              
+              <div class="SkillBar">
+                <div id="Skill-JS">
+                  <span class="Skill-Area ">Javascript 65%</span>
+                </div>
+              </div>
+              
+                <div class="SkillBar">
+                <div id="Skill-PHP">
+                  <span class="Skill-Area ">PHP 50%</span>
+                </div>
+              </div>
+              
+                <div class="SkillBar">
+                <div id="Skill-SQL">
+                  <span class="Skill-Area ">SQL 80%</span>
+                </div>
+              </div>
+              
+            </div>
         </div>
         </section> <hr>
 
         <!-- SECTION PORTFOLIO  -->
 
-        <section_portfolio id="section_portfolio">
-            <h2>Portfolio</h2>
+        <section class="portfolio" id="portfolio">
+            <h2>PORTFOLIO</h2>
         </section> <hr>
 
         <!-- SECTION CONTACT  -->
 
         <footer>
-            <h2>Contact</h2>
-        <section_contact id="section_contact">
+        <section class="contactez" id="contact">
+            <h2>CONTACT</h2>
         <div class="contact">
-            <h3>Laissez-nous un message</h3>
+            <h3>Laissez-moi un message</h3>
             <form action="contact" method="post">
         <div>
                 <label for="name"></label>
@@ -107,7 +125,7 @@
         </div>
             </form>
         <div class="information">
-            <h3>Adresse</h3>
+            <h3>ADRESSE</h3>
             <p>18 Rue Jayr</p>
             <p>01250 Ceyzériat</p>
             <p>07 86 21 83 36</p>
@@ -116,5 +134,6 @@
      </section>
      </footer>
     </main>
+    <script src="./portfolio.js"></script>
 </body>
 </html>
